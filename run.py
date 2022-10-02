@@ -1,11 +1,17 @@
 import comments_collector as cc
 
-api_key = "AIzaSyAl7yjWd1qLxdmANEFNDAC828D2jFjucqY"
-video_url = "https://www.youtube.com/watch?v=MDBykpSXsSE"
+api_key = "ENTER YOUR YOUTUBE API KEY HERE"
+video_url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 
 def get_comments(video_url, order = 'time', maxResults = 100):
     '''
     the function to fetch comments from the helper module for ONE video
+    Args:
+        video_url(str): url to video you want to download comments for
+        order(str): how to sort comments 
+        maxResults(int): how many comments to parse per query
+    Output:
+        Produces a .csv file containing the results for one video
     '''    
     # build the service for YT API    
     yt_service = cc.build_service(api_key)    
