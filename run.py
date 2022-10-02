@@ -1,4 +1,3 @@
-import sys
 import comments_collector as cc
 
 api_key = "AIzaSyAl7yjWd1qLxdmANEFNDAC828D2jFjucqY"
